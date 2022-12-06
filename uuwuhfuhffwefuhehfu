@@ -1,0 +1,25 @@
+local v1 = game.Players.LocalPlayer.Character;
+v1:FindFirstChild("HumanoidRootPart");
+for i1,v3 in pairs(game:GetService("Players"):GetChildren()) do
+    v3.Chatted:Connect(function(msg) end);
+end;
+
+repeat wait() until game:GetService("ReplicatedStorage"):FindFirstChild("Inventories"):FindFirstChild(game.Players.LocalPlayer.Name):FindFirstChild("wood_pickaxe");
+
+local v4 = game:GetService("ReplicatedStorage"):FindFirstChild("Inventories"):FindFirstChild(game.Players.LocalPlayer.Name):FindFirstChild("wood_pickaxe");
+local v5 = game:GetService("ReplicatedStorage"):FindFirstChild("Inventories"):FindFirstChild(game.Players.LocalPlayer.Name):FindFirstChild("wood_swoird");
+
+local v6 = game.Players.LocalPlayer.Character;
+local v7 = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart");
+
+for i2,v8 in pairs(workspace:GetChildren()) do
+    if v8.Name == "bed" then
+        if v8.Covers.BrickColor ~= game.Players.LocalPlayer.Team.TeamColor then
+            wait()
+            game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = v8.CFrame
+            wait(.2)
+            game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = v8.CFrame
+            local v9 = game.Players.LocalPlayer.Character;
+        end;
+    end;
+end;
